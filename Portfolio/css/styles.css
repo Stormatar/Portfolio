@@ -1,0 +1,226 @@
+/*
+Name: Ronan Norbury
+Date: 12/8/2024
+File: Website Portfolio
+*/
+
+/* css Reset */
+body,
+header,
+nav,
+ul,
+main,
+aside,
+figure,
+figcaption,
+video,
+footer,
+img,
+h1,
+h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Show Mobile Style Rules, Hide tab-desk And desktop Style Rules */
+.mobile {
+    display: block;
+}
+
+.tab-desk,
+.desktop {
+    display: none;
+}
+
+/* Style Rules for Body */
+body {
+    background-color: #f9f2eb;
+}
+
+/* Style Rules for Header */
+header {
+    padding: 2%;
+    text-align: center;
+    background-color: #e7cab1;
+}
+
+h3 {
+    text-align: center;
+}
+
+#wrap-head {
+    position: fixed;
+    width: 100%;
+}
+
+/* Style Rules for Image */
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 2%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style Rules for lang img grid */
+.lang-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+}
+
+.lang-img {
+    max-width: 60%;
+    transition: transform .2s;
+
+}
+
+.lang-img:hover {
+    transform: scale(1.5);
+}
+
+/* Style Rule for Nav */
+.mobile-nav {
+    position: absolute;
+}
+
+.mobile-nav a {
+    text-align: left;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    color: #2a1f14;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
+
+#nav-links {
+    display: none;
+    width: 120px;
+    background-color: #f9f2ec;
+    border-radius: 2%;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Style Rules for Main */
+main {
+    padding: 10px;
+    padding-top: 18%;
+    text-align: center;
+}
+
+#link a {
+    text-decoration: none;
+    color: #996300;
+}
+
+#work {
+    text-align: center;
+}
+
+/* Style Rules for Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e7cab1;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* Media Query for Tablet Viewports */
+@media screen and (min-width: 620px),
+print {
+
+    /* Show tab-desk Class, Hide mobile Class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile,
+    .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style Rules for Nav */
+    nav ul {
+        list-style-type: none;
+        position: fixed;
+        background-color: #e7cab1;
+
+    }
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    nav li a {
+        padding: 0.5em;
+        display: block;
+        text-decoration: none;
+        color: #996300;
+    }
+
+    /* Tablet Viewport: Style Rules for header */
+    header {
+        padding: 1%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    /* Tablet Viewport: Style Rules for image */
+    .lang-container {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    /* Tablet Viewport: Style Rules for main */
+    main {
+        padding-top: 8%;
+        padding-bottom: 3%;
+    }
+
+    #intro-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+    }
+
+    #pic {
+        width: 50%;
+    }
+
+    #intro {
+        font-size: 50px;
+        padding: 1%;
+    }
+
+}
+
+/* Media Query for desktop */
+@media screen and (min-width: 1000px),
+print {
+    main {
+        padding-top: 6%;
+        font-size: 1.5em;
+    }
+
+    .lang-container {
+        max-width: 50%;
+    }
+}
